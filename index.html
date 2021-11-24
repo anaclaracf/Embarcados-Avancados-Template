@@ -411,15 +411,23 @@
 <h2 id="motivacao">Motivação<a class="headerlink" href="#motivacao" title="Permanent link">&para;</a></h2>
 <p>Esse tutorial foi realizado com o intuito de aprender e entender um pouco mais sobre uma das mais novas linguagens de design de hardware, Chisel, e apresentar sua infraestrutura, algumas formas de implementá-la e quais são suas possibilidades.</p>
 <h2 id="introducao-sobre-chisel">Introdução sobre Chisel<a class="headerlink" href="#introducao-sobre-chisel" title="Permanent link">&para;</a></h2>
-<p>Chisel é uma linguagem de design de hardware extremamente nova e que foi desenvolvida como uma alternativa às HDLs (Hardware Description Languages), como por exemplo Verilog e VHDL. O que diferencia a Chisel  das mais clássicas é a possibilidade de realizar a programação por meio de uma linguagem mais atualizada, sendo essa o Scala, facilitando o desenvolvimento de circuitos e designs mais complexos.</p>
-<p>Além disso, o Chisel se baseia na estrutura de compilador de hardware<a href="https://github.com/chipsalliance/firrtl">FIRRTL (Flexible Intermediate Representation for RTL)</a>], a qual permite uma compilação de circuitos mais otimizada, em menor tempo e mais otimizada.</p>
-<p>Caso deseje saber um pouco mais sobre a linguagem:
-- <a href="http://www.imm.dtu.dk/~masca/chisel-book.html">Livro Design Digital com Chisel</a>
-- <a href="https://www.chisel-lang.org/chisel3/docs/introduction.html">Documentação Chisel</a>
-- <a href="https://github.com/chipsalliance/chisel3">Github Chisel</a></p>
+<p>Chisel é uma linguagem de design de hardware extremamente nova e que foi desenvolvida como uma alternativa às HDLs (Hardware Description Languages), como por exemplo Verilog e VHDL. O que diferencia a Chisel das mais clássicas é a possibilidade de realizar a programação por meio de uma linguagem mais atualizada, sendo essa o Scala, facilitando o desenvolvimento de circuitos e designs mais complexos.</p>
+<p>Além disso, o Chisel se baseia na estrutura de compilador de hardware <a href="https://github.com/chipsalliance/firrtl">FIRRTL (Flexible Intermediate Representation for RTL)</a>, a qual permite uma compilação de circuitos mais otimizada, em menor tempo e mais otimizada.</p>
+<p>Caso deseje saber um pouco mais sobre a linguagem:</p>
+<ul>
+<li>
+<p><a href="http://www.imm.dtu.dk/~masca/chisel-book.html">Livro Design Digital com Chisel</a></p>
+</li>
+<li>
+<p><a href="https://www.chisel-lang.org/chisel3/docs/introduction.html">Documentação Chisel</a></p>
+</li>
+<li>
+<p><a href="https://github.com/chipsalliance/chisel3">Github Chisel</a></p>
+</li>
+</ul>
 <h2 id="chisel-tutorial-sem-necessidade-de-instalacao">Chisel Tutorial (Sem necessidade de instalação)<a class="headerlink" href="#chisel-tutorial-sem-necessidade-de-instalacao" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="chisel-tutorial.png" />
-Antes de continuar o tutorial, pode ser interessante executar este <a href="https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master">notebook</a> para ter uma noção melhor da linguagem scala, caso não esteja familiarizado. Em especial, o arquivo "1_intro_to_scala.ipynb" pode ser bem útil e os demais vão cobrir pontos que não abordaremos neste projeto, por exemplo como construir seus próprios módulos no</p>
+Antes de continuar o tutorial, pode ser interessante executar este <a href="https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master">notebook</a> para ter uma noção melhor da linguagem scala, caso não esteja familiarizado. Em especial, o arquivo "1_intro_to_scala.ipynb" pode ser bem útil, e os demais vão cobrir pontos que não abordaremos neste projeto, por exemplo como construir seus próprios módulos do zero no Chisel.</p>
 <h2 id="instalacoes">Instalações<a class="headerlink" href="#instalacoes" title="Permanent link">&para;</a></h2>
 <h3 id="instalacao-no-ubuntu">Instalação no Ubuntu<a class="headerlink" href="#instalacao-no-ubuntu" title="Permanent link">&para;</a></h3>
 <ul>
@@ -445,14 +453,14 @@ Antes de continuar o tutorial, pode ser interessante executar este <a href="http
 </div>
 <h3 id="instalacao-no-windows">Instalação no Windows<a class="headerlink" href="#instalacao-no-windows" title="Permanent link">&para;</a></h3>
 <ul>
-<li>[Baixar arquivo do SBT] (<a href="https://www.scala-sbt.org/download.html">https://www.scala-sbt.org/download.html</a>)</li>
+<li><a href="https://www.scala-sbt.org/download.html">Baixar arquivo do SBT</a></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>É necessário baixar o SBT pois essa é a ferramenta que permite a execução e construção de projetos em Scala e Java.</p>
 </div>
 <ul>
-<li>[Instalação do Chocolatey] (<a href="https://community.chocolatey.org/packages/sbt">https://community.chocolatey.org/packages/sbt</a>)</li>
+<li><a href="https://community.chocolatey.org/packages/sbt">Instalação do Chocolatey</a></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
