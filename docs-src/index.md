@@ -21,13 +21,15 @@ Esse tutorial foi realizado com o intuito de aprender e entender um pouco mais s
 
 ## Introdução sobre Chisel
 
-Chisel é uma linguagem de design de hardware extremamente nova e que foi desenvolvida como uma alternativa às HDLs (Hardware Description Languages), como por exemplo Verilog e VHDL. O que diferencia a Chisel  das mais clássicas é a possibilidade de realizar a programação por meio de uma linguagem mais atualizada, sendo essa o Scala, facilitando o desenvolvimento de circuitos e designs mais complexos.
+Chisel é uma linguagem de design de hardware extremamente nova e que foi desenvolvida como uma alternativa às HDLs (Hardware Description Languages), como por exemplo Verilog e VHDL. O que diferencia a Chisel das mais clássicas é a possibilidade de realizar a programação por meio de uma linguagem mais atualizada, sendo essa o Scala, facilitando o desenvolvimento de circuitos e designs mais complexos.
 
 
-Além disso, o Chisel se baseia na estrutura de compilador de hardware [FIRRTL (Flexible Intermediate Representation for RTL)](https://github.com/chipsalliance/firrtl)], a qual permite uma compilação de circuitos mais otimizada, em menor tempo e mais otimizada.
+Além disso, o Chisel se baseia na estrutura de compilador de hardware [FIRRTL (Flexible Intermediate Representation for RTL)](https://github.com/chipsalliance/firrtl), a qual permite uma compilação de circuitos mais otimizada, em menor tempo e mais otimizada.
 
 
 Caso deseje saber um pouco mais sobre a linguagem:
+
+
 - [Livro Design Digital com Chisel](http://www.imm.dtu.dk/~masca/chisel-book.html)
 
 
@@ -63,10 +65,10 @@ Antes de continuar o tutorial, pode ser interessante executar este [notebook](ht
 
 ### Instalação no Windows
 
-- [Baixar arquivo do SBT] (https://www.scala-sbt.org/download.html)
+- [Baixar arquivo do SBT](https://www.scala-sbt.org/download.html)
 !!! info
     É necessário baixar o SBT pois essa é a ferramenta que permite a execução e construção de projetos em Scala e Java.
-- [Instalação do Chocolatey] (https://community.chocolatey.org/packages/sbt)
+- [Instalação do Chocolatey](https://community.chocolatey.org/packages/sbt)
 !!! info
     Foi escolhido o Chocolatey como ferramenta para instalar o SBT, mas outras, como o scoop, podem ser utilizadas para instalar o SBT no seu computador. Para instalar a ferramenta utilize o comando abaixo:
 
