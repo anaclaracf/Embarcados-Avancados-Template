@@ -4,7 +4,7 @@
 - **Curso:** Engenharia da Computação
 - **Semestre:** 10 / 6
 - **Contato:** victorlm2@al.insper.edu.br / anaccf5@al.insper.edu.br
-- **Ano:** 2020
+- **Ano:** 2021
 
 ## Começando
 
@@ -45,29 +45,30 @@ Antes de continuar o tutorial, pode ser interessante executar este [notebook](ht
 - [Instalação do Java](https://adoptopenjdk.net/).
 
 !!! info
-Explicar por quê o Java é necessário.
+A instalação do Scala e os projetos que usam o SBT assumem que o ambiente já possui um JDK instalado, por isso é preciso realizar a instalação do java.
 
 - [Instalação do Scala](https://www.scala-sbt.org/download.html).
 
 !!! info
-Explicar por quê o Scala é necessário.
+O Chisel é baseado no Scala para compilar os arquivos dos seus projetos, ou seja, o Scala é uma "Domain Specific Language" - uma linguagem de programação
+específica para uma determinada aplicação.
 
 - [Instalação do Verilator](https://verilator.org/guide/latest/install.html).
 
 !!! info
-Explicar por quê o Verilator é necessário.
+O Verilator é utilizado na etapa de compilação do código em Scala para Verilog.
 
 ### Instalação no Windows
 
 - [Baixar arquivo do SBT](https://www.scala-sbt.org/download.html)
 
-  !!! info
-  É necessário baixar o SBT pois essa é a ferramenta que permite a execução e construção de projetos em Scala e Java.
+!!! info
+É necessário baixar o SBT pois essa é a ferramenta que permite a execução e construção de projetos em Scala e Java.
 
 - [Instalação do Chocolatey](https://community.chocolatey.org/packages/sbt)
 
-  !!! info
-  Foi escolhido o Chocolatey como ferramenta para instalar o SBT, mas outras, como o scoop, podem ser utilizadas para instalar o SBT no seu computador. Para instalar a ferramenta utilize o comando abaixo:
+!!! info
+Foi escolhido o Chocolatey como ferramenta para instalar o SBT, mas outras, como o scoop, podem ser utilizadas para instalar o SBT no seu computador. Para instalar a ferramenta utilize o comando abaixo:
 
 ```
 choco install sbt
@@ -99,7 +100,7 @@ Em seguida, podemos compilar o projeto para verilog. Como argumento do comando "
 
     make chisel BOARD=de1_soc_revF
 
-O output dos arquivos compilados se encontra na pasta `generated`. Dos arquivos gerados, vamos precisar de apenas dois para passar para a FPGA via quartus: o "Toplevel.v" e o pll gerado "pll_de1_soc_revF.v" (TODO: conferir depois se o nome é esse mesmo). Com ambos os arquivos gerados:
+O output dos arquivos compilados se encontra na pasta `generated`. Dos arquivos gerados, vamos precisar de apenas dois para passar para a FPGA via quartus: o "Toplevel.v" e o pll gerado "pll_de1_soc_revF.v". Com ambos os arquivos gerados:
 
 - Abra o quartus e crie um novo projeto.
 <p align="center">
@@ -120,3 +121,15 @@ O output dos arquivos compilados se encontra na pasta `generated`. Dos arquivos 
 </p>
 
 - Compile e passe para a FPGA.
+
+<p align="center">
+    <img src="programmer.png" width="600" height="600" />
+</p>
+
+## Vídeo de resultado
+
+<figure class="video_container">
+    <video controls="true" allowfullscreen="true" width="600" height="400">
+        <source src = "video_projeto.mp4" type="video/mp4">
+    </video>
+</figure>
